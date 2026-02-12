@@ -21,4 +21,4 @@ jobs:
           cd /var/www/devops-practice
           git pull origin main
           npm ci --production
-          pm2 reload my-app
+          pm2 restart devops-practice
