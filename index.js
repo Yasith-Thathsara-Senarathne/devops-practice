@@ -6,6 +6,11 @@ app.get('/', (req, res) => {
     res.send('Devops Practice API');
 });
 
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'ok' });
+});
+
+
 app.listen(port, () => {
     console.log(`Devops Practice app listening at http://localhost:${port}`);
 });
